@@ -1,0 +1,42 @@
+.bggif{
+    width: 100%;
+    height: 650px
+}
+.bgimagegif{
+    background-image: url(./bg3.gif);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 610px;
+    width: 100%;
+    background-size: 100% 100%;
+    
+}
+
+
+
+.bannertxt-2{
+    color: #38DEF3;
+}
+.bannertxt{
+    font-size: 40px;
+    margin-left: 70px;
+}
+.picbg{
+    height: 500px;
+    
+}
+
+@media (max-width: 997px) {
+    .bannertxt{
+        font-size: 24px;
+    }
+    
+    .bgimagegif{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .navbar-toggler{
+        background-color: white;
+    }
+  }

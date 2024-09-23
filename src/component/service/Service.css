@@ -1,0 +1,142 @@
+.service-container {
+    position: relative;
+     /* Set a width for the revolving effect */
+    height: 590px; /* Set a height for the revolving effect */
+    margin: 10px auto; /* Center the container */
+  }
+  
+  .service-text h4{
+    font-size: 45px !important;
+  }
+  .service-text {
+    font-size: 80px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Bring the service text to the front */
+    font-size: 36px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Base text color */
+    background: linear-gradient(45deg, #00cfff, #00aaff); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text; /* Clip background to text */
+    text-fill-color: transparent; /* Make text transparent for gradient effect */
+    text-shadow: 
+      0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
+      0 0 10px rgba(0, 207, 255, 0.5), /* Sky blue glow */
+      0 0 15px rgba(0, 170, 255, 0.5), /* Lighter sky blue glow */
+      0 0 20px rgba(0, 170, 255, 0.5); /* Stronger glow effect */
+    animation: glitter 1.5s infinite alternate; /* Animation for sparkle effect */
+
+    width: 230px; /* Set width */
+    height: 230px; /* Set height equal to width */
+    padding: 0; /* Remove padding to maintain circular shape */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
+    border-radius: 50%; /* Make it a circle */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex; /* Use flexbox to center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  
+  }
+  .bg-top{
+    width: 400px;
+    height: 20px;
+    /* height: 295px; */
+    position: absolute;
+    top: 1100px;
+    background-color: #ffffff;
+} 
+ .bg-top1{
+    width: 200px;
+    height: 20px;
+    /* height: 295px; */
+    position: absolute;
+    top: 1150px;
+    background-color: #00cfff;
+}
+
+.bg-btm{
+    width: 400px;
+    height: 20px;
+    /* height: 295px; */
+    position: absolute;
+    top: 1676px;
+    right: 0px;
+    background-color: #ffffff;
+}
+
+.bg-btm1{
+    width: 200px;
+    height: 20px;
+    /* height: 295px; */
+    position: absolute;
+    top: 1626px;
+    right: 0px;
+    background-color: #00cfff;
+}
+  
+  
+  
+  @keyframes glitter {
+    0% {
+      text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5), 
+        0 0 10px rgba(0, 207, 255, 0.5),
+        0 0 15px rgba(0, 170, 255, 0.5),
+        0 0 20px rgba(0, 170, 255, 0.5);
+    }
+    100% {
+      text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(0, 207, 255, 0.8),
+        0 0 30px rgba(0, 170, 255, 0.8),
+        0 0 40px rgba(0, 170, 255, 0.8);
+    }
+  }
+  
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px; /* Width of the planet */
+    height: 0px; /* Height of the planet */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: revolve 5s infinite linear; 
+    font-size: 15px;
+    color: white;
+  }
+
+  .planet-img{
+    width: 130px; /* Set the desired width */
+    height: 130px; /* Set the desired height */
+  }
+  
+  #planet1 {
+    animation-delay: 0s;
+  }
+  
+  #planet2 {
+    animation-delay: 1.2s; /* Delay for the second planet */
+  }
+  
+  #planet3 {
+    animation-delay: 2.4s; /* Delay for the third planet */
+  }
+  #planet4 {
+    animation-delay: 3.6s; /* Delay for the third planet */
+  }
+  
+
+  @keyframes revolve {
+    0% {
+      transform: rotate(0deg) translateY(230px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateY(230px) rotate(-360deg);
+    }
+  }
+  

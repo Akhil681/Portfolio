@@ -1,0 +1,95 @@
+/* src/RandomIcons.css */
+
+/* .icon-container {
+    position: relative;
+    width: 300px;
+    height: 300px; 
+    border: 2px solid #00cfff; 
+    overflow: hidden;
+    margin: auto; 
+    background-color: #000000; 
+    border-radius: 50%; 
+} */
+
+.icon-container {
+    position: relative;
+    width:1000px; /* Set the container size */
+    height: 400px; /* Set the container size */
+    border: 2px solid #00cfff; /* Border for the container */
+    overflow: hidden; /* Hide overflow */
+    margin: auto; /* Center the container */
+    background-color: #000000; /* Optional background color */
+    border-radius: 20px;
+}
+
+.icon {
+    width: 80px; /* Set the icon size */
+    height: 80px; /* Set the icon size */
+    transition: top 4s ease, left 4s ease; /* Smooth transition */
+}
+
+.icon img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%;
+}
+
+.skills-text {
+    width: 1000px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Base text color */
+    background: linear-gradient(45deg, #00cfff, #00aaff); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    background-clip: text; /* Clip background to text */
+    text-fill-color: transparent; /* Make text transparent for gradient effect */
+    text-shadow: 
+      0 0 5px rgba(255, 255, 255, 0.5), /* White glow */
+      0 0 10px rgba(0, 207, 255, 0.5), /* Sky blue glow */
+      0 0 15px rgba(0, 170, 255, 0.5), /* Lighter sky blue glow */
+      0 0 20px rgba(0, 170, 255, 0.5); /* Stronger glow effect */
+    animation: glitter 1.5s infinite alternate; /* Animation for sparkle effect */
+
+    /* Set the width of the box */
+    height: 50px; /* Set the height of the box */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 20px; /* Add some padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    
+    
+  
+  }
+
+.skills-text h4{
+    font-size: 40px;
+}
+
+/* src/skills.css */
+
+.newstext {
+    font-size: 22px;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    position: relative;
+    width: 100%; /* Full width */
+    background-color: #000; /* Background color for the ticker */
+    color: white; /* Text color */
+}
+
+.ticker {
+    display: inline-block;
+    padding-left: 100%; /* Start off-screen on the right */
+    animation: scroll 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start at 0 (visible) */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to off-screen left */
+    }
+}
